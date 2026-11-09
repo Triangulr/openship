@@ -2,7 +2,7 @@ services:
   - type: web
     name: openship-dashboard
     runtime: docker
-    plan: 12c-96g
+    plan: 8c-32g
     region: singapore
     dockerfilePath: ./apps/dashboard/Dockerfile
     dockerContext: .
@@ -18,7 +18,7 @@ services:
   - type: pserv
     name: openship-api
     runtime: docker
-    plan: 12c-96g
+    plan: 8c-32g
     region: singapore
     dockerfilePath: ./apps/api/Dockerfile
     dockerContext: .
